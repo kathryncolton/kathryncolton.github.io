@@ -12,9 +12,9 @@ nav img {
         width: 100%;
     }    
 
-nav ul.hide {
+nav ul {
     display: block;
-    }    
+    } 
     
 nav ul li{
     float: left;
@@ -36,7 +36,7 @@ nav ul li.active a {
 nav ul li a:hover {
     color: #E9c165;
 }	    
-
+   
 }
 
 

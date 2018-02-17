@@ -49,24 +49,24 @@ nav li {
     display: none;
 }
 @media only screen and (max-width: 37.5em) {
-nav ul.hide {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #563420;
     }
 
-nav ul.hide li a {
+nav ul li a {
     display: block;
     padding: .8rem;
     text-decoration: none;
     color: #fafbfb;
 }
-nav ul.hide li.active a {
+nav ul li.active a {
     color: black;
     background-color: #80c2d8;
 }
-nav ul.hide li a:hover {
+nav ul li a:hover {
     color: #E9c165;
 }	
 }
