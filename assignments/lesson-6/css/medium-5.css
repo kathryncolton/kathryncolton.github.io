@@ -14,12 +14,7 @@ nav img {
 
 nav ul.hide {
     display: block;
-    }  
-    
-li {
-    float: left;
-    display: inline-block;
-}    
+    }    
     
 nav ul li{
     float: left;
