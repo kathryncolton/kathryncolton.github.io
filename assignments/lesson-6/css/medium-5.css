@@ -19,6 +19,7 @@ nav ul.hide {
     
 nav ul li{
     float: left;
+    display: inline-block;
     list-style-type: none;
     background-color: #563420;
     
