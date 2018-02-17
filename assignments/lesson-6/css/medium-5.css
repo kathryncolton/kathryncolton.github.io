@@ -12,8 +12,9 @@ nav img {
         width: 100%;
     }    
 
-nav ul {
+nav ul.hide {
     display: block;
+    
     } 
     
 nav ul li{
