@@ -48,10 +48,9 @@ nav button {
 nav ul.hide {
     display: none;
 }
-@media only screen and (max-width: 37.5em) {
 
     
-nav ul.hide {
+nav.hide {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -71,7 +70,7 @@ nav ul.hide li.active a {
 nav ul.hide li a:hover {
     color: #E9c165;
 }	
-}
+
 
 main {
     color: #354046;
