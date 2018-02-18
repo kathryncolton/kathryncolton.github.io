@@ -14,7 +14,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header img {
     float: left;
-    margin-left: 10px;
+    margin: 0 1em;
 }
 header h1 {
     font-family: 'Roboto Slab', serif;
@@ -48,26 +48,28 @@ nav button {
 nav ul.hide {
     display: none;
 }
-
     
-nav.hide {
-    list-style-type: none;
+nav ul {
+    display: block;
     margin: 0;
     padding: 0;
     background-color: #563420;
     }
 
-nav ul.hide li a {
+nav ul li a {
     display: block;
+    border-top: solid 1px white;
+    list-style-type: none;
+    width: 100%;
     padding: .8rem;
     text-decoration: none;
     color: #fafbfb;
 }
-nav ul.hide li.active a {
+nav ul li.active a {
     color: black;
     background-color: #80c2d8;
 }
-nav ul.hide li a:hover {
+nav ul li a:hover {
     color: #E9c165;
 }	
 
@@ -109,11 +111,12 @@ th, td {
 
 article p {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 90%; /* fill the page in the small/phone view */
-  margin: 1em;
+  width: 100%; /* fill the page in the small/phone view */
+  margin: 0 0 .5em 0;
 }
 
 footer {

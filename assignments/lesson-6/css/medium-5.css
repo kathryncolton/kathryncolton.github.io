@@ -6,7 +6,10 @@
   section.forecast { display: initial; }  /* show the 10-day forecast with the medium view and up */
   
   article p.town-article img { 
-      width: 66%; float:right; }  /* responsive images */
+      width: 66%; 
+      float:right;
+      margin: 1em;
+    }  /* responsive images */
       
 nav img {
         width: 100%;
@@ -14,21 +17,18 @@ nav img {
 
 nav ul.hide {
     display: block;
-    
     } 
     
 nav ul li{
     float: left;
-    display: inline-block;
     list-style-type: none;
     background-color: #563420;
-    
 }
 
 nav ul li a {
-    display: block;
     padding: .8rem;
     text-decoration: none;
+    border: none;
     color: #fafbfb;
 }
 nav ul li.active a {
