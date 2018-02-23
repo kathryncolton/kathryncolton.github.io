@@ -42,12 +42,16 @@ nav ul li a:hover {
     color: #E9c165;
 }	 
 
-    .articleflex {
-        display: flex;
-        flex-wrap: wrap;
+.articleflex {
+    display: flex;
+    flex-wrap: wrap;
     }
     
+.grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
     
+}
     
    
 }

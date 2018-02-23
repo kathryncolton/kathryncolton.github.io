@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin Weather Watch</title>
+  <meta name="author" content="Kathryn Colton">
+  <meta name="description" content="Tri-City Weather Watch Page Franklin MU">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="headerflex">
+    <img class="headflexitem logo" src="images/weather-157129_640.png" alt="The site logo" width="100">
+    <h1 class="headflexitem">Tri-City Weather Watch</h1>
+    <div class="subheading headflexitem" >Our eye on the sky for <em>you.</em></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+       <button onclick="hamburger()">&#9776;</button>
+    <ul id="navigation" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li class="active"><a href="#">Gallery</a></li>
+    </ul>
+      <img src="images/franklin-original.jpg" alt="landscape picture with cloudy sky" sizes="100vw" srcset="images/franklin-small.jpg 600w, images/franklin-med.jpg 750w, images/franklin-large.jpg 1000w">
+  </nav>
+    
+  <main>
+    <h2 class="cityname">Photo Gallery Page</h2>
+    <div class="grid">
+      <figure><img src="images/lightning-storm-weather-sky-53459-large.jpg" alt="stormy sky photo">
+          <figcaption>A photo of a stormy sky.</figcaption>
+      </figure>
+      <figure><img src="images/pexels-photo-164024-large.jpg" alt="sunset with clouds">
+        <figcaption>Descriptive text here.</figcaption>
+        </figure>    
+      <figure><img src="images/pexels-photo-69896-large.jpg" alt="child playing in puddle">
+        <figcaption>Descriptive text here.</figcaption>
+        </figure>
+      <figure><img src="images/pexels-photo-773583-large.jpg" alt="meadow in sunset">
+        <figcaption>Description here.</figcaption>
+        </figure>
+      <figure><img src="images/snow-landscape-trees-winter-large.jpg" alt="snowy trees">
+        <figcaption>Description here.</figcaption>
+        </figure>
+      <figure><img src="images/pexels-photo-org-large.jpg" alt="snowy trees">
+        <figcaption>Description here.</figcaption>
+        </figure>    
+    </div>
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p>123 Main Street</p>
+      <p>Franklin, MU 83454</p>
+      <p>(999)999.999</p> 
+      <p>contact@tricityweather.com</p>    
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-City Weather Watch | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/windchill.js"></script>    
+
+</body>
+</html>

@@ -1,9 +1,12 @@
-var high = parseFloat(document.getElementById('high').value);
-var low = parseFloat(document.getElementById('low').value);
-var speed = parseFloat(document.getElementById('speed').value);
+var h = parseFloat(document.getElementById("high").innerHTML);
+var l = parseFloat(document.getElementById("low").innerHTML);
+var s = parseFloat(document.getElementById("speed").innerHTML);
 
-var avTemp = (high + low) / 2;
 
-var f = 35.74 + 0.6215 * avTemp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * avTemp * Math.pow(speed, 0.16);
+var avTemp = (h + l) / 2;
+
+var f = 35.74 + 0.6215 * avTemp - 35.75 * Math.pow(s, 0.16) + 0.4275 * avTemp * Math.pow(s, 0.16);
+
+f = Math.round(f * 100) / 100.0;
 
 document.getElementById("windchill").innerHTML = f;

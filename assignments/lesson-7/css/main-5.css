@@ -122,7 +122,7 @@ article p {
     padding-right: 20px;
 }
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%; /* fill the page in the small/phone view */
   margin: 0 0 .5em 0;
 }
@@ -169,4 +169,16 @@ footer>p {
     margin-bottom: 0;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 600px;
+    
+}
 
+main figure img {
+    width: 100%;
+}
+
+.grid figure figcaption {
+    display: none;
+}
