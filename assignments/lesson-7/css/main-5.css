@@ -11,31 +11,39 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   max-width: 1000px;
     margin: auto; 
 }
+
 .headerflex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.headflexitem:last-of-type {
-    align-self: center;
+header picture {
+    width: 120px;
+}
+
+header picture img {
+    width: 80%;
+    margin: 10%;
 }
 
 header h1 {
     font-family: 'Roboto Slab', serif;
     color: #0187b1;
-    padding-left: 20px;
     }
 
+header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.subheading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    margin: -12px 0 10px 0;
+}
 nav img {
     width: 100%;
     max-width: 1000px; 
-}
-
-header .subheading {
-    padding: 10px 0 .5em 20px;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
 }
 
 /*nav elements start here*/
@@ -102,9 +110,8 @@ section {
 }
 
 table {
-    margin-bottom: 5px;
+    margin: 0 auto 5px;
     min-width: 37.5em;
-    
 }
 
 th, td {
@@ -118,7 +125,7 @@ article p {
     padding-right: 20px;
 }
 
-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%; /* fill the page in the small/phone view */
   margin: 0 0 .5em 0;
 }
@@ -167,7 +174,7 @@ footer>p {
 
 .grid {
     display: grid;
-    grid-template-columns: 600px;
+    grid-template-columns: auto;
     
 }
 
@@ -175,6 +182,7 @@ main figure img {
     width: 100%;
 }
 
-.grid figure figcaption {
+main div figure figcaption {
     display: none;
+    
 }

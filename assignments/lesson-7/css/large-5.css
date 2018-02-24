@@ -1,10 +1,12 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  
-  article p.town-article img {  }
+  article p.town-article img { width: 40%; }
   
 .grid figure figcaption {
     display: initial;
+}
+main div figure figcaption {
+    margin: 32px 0;
 }
     
 .grid figure img:hover {
