@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin Weather Watch</title>
+  <meta name="author" content="Kathryn Colton">
+  <meta name="description" content="Tri-City Weather Watch Page Franklin MU">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="headerflex">
+    <picture><img class="headflexitem logo" src="images/weather-157129_640.png" alt="The site logo">
+      </picture>
+      <div><h1>Tri-City Weather Watch</h1>
+      <div class="subheading">Our eye on the sky for you.</div>
+      </div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+       <button onclick="hamburger()">&#9776;</button>
+    <ul id="navigation" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li class="active"><a href="#">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+      <img src="images/franklin-original.jpg" alt="landscape picture with cloudy sky" sizes="100vw" srcset="images/franklin-small.jpg 600w, images/franklin-med.jpg 750w, images/franklin-large.jpg 1000w">
+      
+  </nav>
+  
+     
+     
+  <main id="stormcenter">
+     <h2 class="cityname">Report A Storm</h2>
+    <form action="thank-you.html" name="storm" id="forms">
+      
+    <fieldset>
+	<legend><span>Storm Information</span></legend>
+	<label><span>Storm Date and Time:</span><input name="stormdate" type="datetime-local"></label>
+	<label><span>Storm Type:</span><input name="stormtype" type="text" list="stormType">
+    <datalist id="stormType">
+	<option value="Thunder"></option>
+	<option value="Snow"></option>
+	<option value="Rain"></option>
+    <option value="Hail"></option>
+    <option value="Tornado"></option>    
+	</datalist>
+    </label>
+    <label><span>Storm Severity:</span><input name="severity" type="range" id="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue"> 5</span></label>    
+	<label><span>Storm Region:</span>
+    <select name="stormregion">
+    <option value="" selected disabled>Select Region</option>
+    <option value="Franklin">Franklin</option>
+    <option value="Greenville">Greenville</option>
+    <option value="Springfield">Springfield</option>
+    </select></label>
+    <label><span>In Danger Level:</span>
+    <input type="radio" name="dangerlevel" value="yes"> Yes<br>
+    <input type="radio" name="dangerlevel" value="maybe"> Maybe<br>
+    <input type="radio" name="dangerlevel" value="no"> No<br>    
+    </label> 
+    <label><span></span><textarea name="message" rows="10" cols="30" placeholder="additional comments"></textarea></label> </fieldset>  
+        
+    <fieldset>
+	<legend><span>Contact Information</span></legend>
+	<label><span>Full Name:</span><input name="fullname" type="text" placeholder="full name" pattern="[a-zA-Z -._]{3,99}" autocomplete="on" required></label>
+	<label><span>email:</span><input name="email" type="email" placeholder="youremail@adress.com" autocomplete="on"></label>
+    <label><span>Phone:</span><input name="phone" type="tel"  pattern="[0-9]{10,20}" required></label>    
+	<label><span>Zip Code:</span><input name="zip" type="text" pattern="[0-9]{5}" required></label>
+	</fieldset>	    
+    
+    <div>    
+    <input type="submit" value="Submit" class="submitBtn">
+	<input type="reset">
+	<input name="redirect" type="hidden" value="thanks.html">
+    </div>
+        
+      </form>
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p>123 Main Street</p>
+      <p>Franklin, MU 83454</p>
+      <p>(999)999.999</p> 
+      <p>contact@tricityweather.com</p>    
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-City Weather Watch | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
+  <script>
+        function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+        }
+  </script>
+
+</body>
+</html>
