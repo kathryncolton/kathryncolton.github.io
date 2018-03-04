@@ -58,7 +58,9 @@ nav ul li a:hover {
         justify-content: center;
         
     }
-    fieldset{width:49%};   
+fieldset {
+        width:46%;
+    }   
    
 }
 
