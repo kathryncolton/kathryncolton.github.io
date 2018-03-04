@@ -171,6 +171,7 @@ footer>p {
     padding: .5em 0em .5em 1em;
     margin-bottom: 0;
 }
+/*** photo gallery css starts here ***/
 
 .grid {
     display: grid;
@@ -186,7 +187,7 @@ main div figure figcaption {
     display: none;
     
 }
-
+/*** form css starts here ***/
 form {
     padding: .5em;
 }
@@ -198,8 +199,58 @@ fieldset {
     border-radius: 5px;
 }
 
-fieldset label span {
-    font-weight: 700;
+legend {
+    padding: 10px 5px;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    color: #563420;
+}
+
+fieldset span {
+    display: block;
+    margin: 20px 0 5px 0;
+    
+}
+
+.submitBtn {
+    padding: 1em;
+    margin: 15px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25em;
+    color: white;
+    background-color: #563420;
+    border-radius: 5px;
+}
+
+#thankyoupage {
+    height: 10em;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topmargin {
+    margin: 10px 0 5px 0;
+}
+#rangeflex {
+    display: flex;
+}
+#ratingvalue {
+    margin-left: 10px;
+}
+/*** old form CSS - delete later
+
+form {
+    padding: .5em;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: #80c2d8;
+    border-radius: 5px;
 }
 
 legend span {
