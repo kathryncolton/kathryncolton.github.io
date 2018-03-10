@@ -19,12 +19,14 @@ weatherObject.onload = function() {
     document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_f;
     
 }
+
 var weatherPic = new XMLHttpRequest();
 weatherPic.open('GET', 'http://api.wunderground.com/api/fc8ab8069c71abb7/conditions/q/MN/Franklin.json', true);
 
 weatherPic.send();
 
 weatherPic.onload = function() {
+    
     var weatherIcon = JSON.parse(weatherPic.responseText);
     
     document.getElementById('weatherIcon').src = weatherIcon.current_observation.icon_url;
@@ -38,8 +40,8 @@ forecastObject.open('GET', 'https://api.wunderground.com/api/fc8ab8069c71abb7/fo
 forecastObject.send();
 
 forecastObject.onload = function() {
-    var forecastInfo = JSON.parse(forecastObject.responseText);
     
+    var forecastInfo = JSON.parse(forecastObject.responseText);
     
     document.getElementById('forecast').innerHTML = forecastInfo.forecast.txt_forecast.forecastday["0"].fcttext;
 }
