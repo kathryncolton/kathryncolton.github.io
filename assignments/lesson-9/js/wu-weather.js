@@ -16,10 +16,16 @@ weatherObject.onload = function() {
     
     document.getElementById('currentCond').innerHTML = weatherInfo.current_observation.weather;
     
-    document.getElementById('weatherIcon').src = weatherInfo.current_observation.icon_url;
-    
     document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_f;
     
+}
+var weatherPic = new XMLHttpRequest();
+weatherPic.open('GET', 'http://api.wunderground.com/api/fc8ab8069c71abb7/conditions/q/MN/Franklin.json', true);
+
+weatherPic.send();
+
+weatherPic.onload = function() {
+    document.getElementById('weatherIcon').src = weatherInfo.current_observation.icon_url;
 }
 
 
