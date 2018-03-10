@@ -25,7 +25,7 @@ weatherPic.open('GET', 'http://api.wunderground.com/api/fc8ab8069c71abb7/conditi
 weatherPic.send();
 
 weatherPic.onload = function() {
-    var weatherIcon = JSON.parse(weatherObject.responseText);
+    var weatherIcon = JSON.parse(weatherPic.responseText);
     
     document.getElementById('weatherIcon').src = weatherInfo.current_observation.icon_url;
 }
