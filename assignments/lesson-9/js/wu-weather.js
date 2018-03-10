@@ -1,7 +1,7 @@
 /***** API KEY: fc8ab8069c71abb7 ***/
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'http://api.wunderground.com/api/fc8ab8069c71abb7/conditions/q/MN/Franklin.json', true);
+weatherObject.open('GET', 'https://api.wunderground.com/api/fc8ab8069c71abb7/conditions/q/MN/Franklin.json', true);
 
 weatherObject.send();
 
