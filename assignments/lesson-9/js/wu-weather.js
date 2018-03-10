@@ -27,7 +27,7 @@ weatherPic.send();
 weatherPic.onload = function() {
     var weatherIcon = JSON.parse(weatherPic.responseText);
     
-    document.getElementById('weatherIcon').src = weatherInfo.current_observation.icon_url;
+    document.getElementById('weatherIcon').src = weatherIcon.current_observation.icon_url;
 }
 
 
