@@ -1,0 +1,95 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display: none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: initial; }  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { 
+      width: 66%; 
+      float: left;
+      margin: 1em;
+    }  /* responsive images */
+    
+
+nav ul.hide {
+    display: flex;
+    } 
+    
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+    
+nav ul li{
+    display: flex;
+    list-style-type: none;
+    background-color: #563420;
+}
+
+nav ul li a {
+    padding: .8rem;
+    text-decoration: none;
+    border: none;
+    color: #fafbfb;
+}
+nav ul li.active a {
+    color: black;
+    background-color: #80c2d8;
+}
+nav ul li a:hover {
+    color: #E9c165;
+}	 
+
+.articleflex {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+ #stormcenter #forms{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+fieldset {
+        width:46%;
+    }   
+   
+    
+main div.weatherstory img {
+    float: right;
+    width: 50%;
+    padding-left: 1em;
+}    
+    
+main div.weatherstory {
+    overflow: auto;
+} 
+
+section.cityBoxes div {
+    display: flex;
+    justify-content: space-around;
+   
+}
+section.cityBoxes div img {
+    max-height: 200px;
+} 
+section.cityBoxes div h2 {
+    margin: 0;
+}  
+section.cityBoxes div h3 {
+    padding: 0 30px 0 30px;
+    text-align: left;
+    
+    
+}           
+}
+
+
