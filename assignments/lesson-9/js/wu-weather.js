@@ -8,7 +8,7 @@ weatherObject.send();
 weatherObject.onload = function() {
     
     var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(weatherInfo);
+    
     
     document.getElementById('APIhigh').innerHTML = weatherInfo.current_observation.temp_f;
     
@@ -26,7 +26,7 @@ weatherPic.send();
 
 weatherPic.onload = function() {
     var weatherIcon = JSON.parse(weatherObject.responseText);
-    console.log(weatherIcon);
+    
     document.getElementById('weatherIcon').src = weatherInfo.current_observation.icon_url;
 }
 
@@ -39,7 +39,7 @@ forecastObject.send();
 
 forecastObject.onload = function() {
     var forecastInfo = JSON.parse(forecastObject.responseText);
-    console.log(forecastInfo);
+    
     
     document.getElementById('forecast').innerHTML = forecastInfo.forecast.txt_forecast.forecastday["0"].fcttext;
 }
