@@ -1,7 +1,7 @@
 /***** API KEY: fc8ab8069c71abb7 ***/
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'https://api.wunderground.com/api/fc8ab8069c71abb7/conditions/q/MN/Franklin.json', true);
+weatherObject.open('GET', 'https://api.wunderground.com/api/fc8ab8069c71abb7/conditions/q/MO/Springfield.json', true);
 
 weatherObject.send();
 
@@ -28,7 +28,7 @@ weatherObject.onload = function() {
 
 var forecastObject = new XMLHttpRequest();
 
-forecastObject.open('GET', 'https://api.wunderground.com/api/fc8ab8069c71abb7/forecast/q/MN/Franklin.json', true);
+forecastObject.open('GET', 'https://api.wunderground.com/api/fc8ab8069c71abb7/forecast/q/MO/Springfield.json', true);
 
 forecastObject.send();
 

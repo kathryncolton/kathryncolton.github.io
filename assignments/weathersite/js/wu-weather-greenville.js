@@ -37,4 +37,8 @@ forecastObject.onload = function() {
     var forecastInfo = JSON.parse(forecastObject.responseText);
     
     document.getElementById('forecast').innerHTML = forecastInfo.forecast.txt_forecast.forecastday["0"].fcttext;
+    
+    document.getElementById('high').innerHTML = forecastInfo.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
+    
+    document.getElementById('low').innerHTML = forecastInfo.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
 }

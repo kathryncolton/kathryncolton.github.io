@@ -11,7 +11,11 @@ main div figure figcaption {
     
 .grid figure img:hover {
     box-shadow: 5px 5px 5px grey;
-}   
+} 
+    
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;}
     
 main div.weatherstory img {
     width: 35%; 
