@@ -75,7 +75,8 @@ main div.weatherstory {
 
 section.cityBoxes div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
    
 }
 section.cityBoxes div img {
