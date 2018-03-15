@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin Weather Watch</title>
+  <meta name="author" content="Kathryn Colton">
+  <meta name="description" content="Tri-City Weather Watch Page Franklin MU">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="headerflex">
+    <picture><img class="headflexitem logo" src="images/weather-157129_640.png" alt="The site logo">
+      </picture>
+      <div><h1>Tri-City Weather Watch</h1>
+      <div class="subheading">Our eye on the sky for you.</div>
+      </div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+       <button onclick="hamburger()">&#9776;</button>
+    <ul id="navigation" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="active"><a href="#">Gallery</a></li>
+    </ul>
+      <img src="images/franklin-original.jpg" alt="landscape picture with cloudy sky" sizes="100vw" srcset="images/franklin-small.jpg 600w, images/franklin-med.jpg 750w, images/franklin-large.jpg 1000w">
+  </nav>
+    
+  <main>
+    <h2 class="cityname">Photo Gallery Page</h2>
+    <div class="grid">
+      <figure><img src="images/lightning-storm-weather-sky-53459-large.jpg" alt="stormy sky photo">
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+      </figure>
+      <figure><img src="images/pexels-photo-164024-large.jpg" alt="sunset with clouds">
+        <figcaption>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</figcaption>
+        </figure>    
+      <figure><img src="images/pexels-photo-69896-large.jpg" alt="child playing in puddle">
+        <figcaption>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption>
+        </figure>
+      <figure><img src="images/pexels-photo-773583-large.jpg" alt="meadow in sunset">
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo..</figcaption>
+        </figure>
+      <figure><img src="images/snow-landscape-trees-winter-large.jpg" alt="snowy trees">
+        <figcaption>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</figcaption>
+        </figure>
+      <figure><img src="images/pexels-photo-org-large.jpg" alt="snowy trees">
+        <figcaption>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</figcaption>
+        </figure>    
+    </div>
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p>123 Main Street</p>
+      <p>Franklin, MU 83454</p>
+      <p>(999)999.999</p> 
+      <p>contact@tricityweather.com</p>    
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-City Weather Watch | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/windchill.js"></script>    
+
+</body>
+</html>

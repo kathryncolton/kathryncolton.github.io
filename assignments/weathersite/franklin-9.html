@@ -1,0 +1,155 @@
+
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin Weather Watch</title>
+  <meta name="author" content="Kathryn Colton">
+  <meta name="description" content="Tri-City Weather Watch Page Franklin MU">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="headerflex">
+    <picture><img class="headflexitem logo" src="images/weather-157129_640.png" alt="The site logo">
+      </picture>
+      <div><h1>Tri-City Weather Watch</h1>
+      <div class="subheading">Our eye on the sky for you.</div>
+      </div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+       <button onclick="hamburger()">&#9776;</button>
+    <ul id="navigation" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+      <img src="images/franklin-original.jpg" alt="landscape picture with cloudy sky" sizes="100vw" srcset="images/franklin-small.jpg 600w, images/franklin-med.jpg 750w, images/franklin-large.jpg 1000w">
+  </nav>
+    
+  <main>
+      <h2 class="cityname">The City of Franklin - <span id="motto"></span></h2>
+    <h3 class="weathersummary">Weather Summary</h3>
+    <section class="current">
+      <div class="highlow">
+        <h3>Forecast: <br><span id="forecast">Partly cloudy. Lows overnight in the upper 70s.</span></h3>
+        <h3>High: <span id="high">40</span>&deg;F</h3>  
+        <h3>Low: <span id="low">12</span>&deg;F</h3>  
+      </div>
+      
+      <div class="conditions">
+        <picture>
+            <img id="weatherIcon" src="">
+        </picture>
+          <p id="currentCond">Sunny</p>
+          <p>Current Temp: <span id="APIhigh"></span>&deg;F</p>
+        <p>Wind Speed: <span id="speed"></span> mph</p>
+        <p>Wind Chill: <span id="windchill"></span>&deg;F</p>
+        </div>
+          
+    </section>
+  
+        
+    <section class="forecast">
+      <h3 class="subhead">10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>40&deg;F</td>
+            <td>45&deg;F</td>
+            <td>35&deg;F</td>
+            <td>37&deg;F</td>
+            <td>46&deg;F</td>
+            <td>47&deg;F</td>
+            <td>46&deg;F</td>
+            <td>40&deg;F</td>
+            <td>39&deg;F</td>
+            <td>50&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+       
+    <section class="events">
+      <h3 class="weathersummary">Events</h3>
+        <p id="events0"></p>
+        <p id="events1"></p>
+        <p id="events2"></p>
+      </section> 
+      
+    <article>
+      <h2>Franklin Breaks Record</h2>	
+        <p class="town-article">
+        <img src="images/sunglasses-1284419_640.jpg" alt="children playing in pool">
+        The heatwave continues, and a few records were broken and tied today.  More records will likely be set this weekend as the temperatures only get hotter.  A heat advisory has been issued for Franklin for Saturday, as well as from the Bitterroot Valley up to the Springfield.  A RED FLAG WARNING for dangerous fire weather conditions has also been issued for northeast MU with hot, dry, and breezy conditions developing again on Saturday.  Find a way to stay cool, because the heat will be intense across the state.  Highs will be well up into the 90s to around 100.  </p>
+        <p>A few isolated thunderstorms are possible over the southwest and south central mountains.  Breezy west winds up to 20mph are possible in the afternoon, creating dangerous fire weather conditions.  Sunday will also be hot, with highs in the 90s to around 100.  But there’s a good chance of thunderstorms in the afternoon and evening that may cool things down briefly.  Monday, a cold front will move into the state triggering a few more thunderstorms.  It will be hot in the 90s ahead of the front, and breezy conditions will once again create dangerous fire weather conditions.
+      </p>
+            
+   </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p>123 Main Street</p>
+      <p>Franklin, MU 83454</p>
+      <p>(999)999.999</p> 
+      <p>contact@tricityweather.com</p>    
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-City Weather Watch | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>      
+  
+<script src="js/wu-weather-franklin.js"></script>
+    
+    <script>
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';  
+    
+    var request = new XMLHttpRequest();
+      
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send(); 
+        
+  request.onload = function() {
+  var citydata = request.response;
+  var cities = citydata['towns'];
+  document.getElementById('motto').innerHTML = '"' + cities[0].motto + '"';
+      document.getElementById('events0').innerHTML = cities[0].events[0];
+      document.getElementById('events1').innerHTML = cities[0].events[1];
+      document.getElementById('events2').innerHTML = cities[0].events[2];
+      
+  } 
+        
+    </script>
+
+</body>
+</html>

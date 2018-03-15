@@ -1,0 +1,266 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  max-width: 1000px;
+    margin: auto; 
+}
+
+.headerflex {
+    display: flex;
+    flex-direction: row;
+}
+picture img {
+    width: 50%;
+}
+header picture {
+    width: 120px;
+}
+
+header picture img {
+    width: 80%;
+    margin: 10%;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #0187b1;
+    }
+
+header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.subheading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    margin: -12px 0 10px 0;
+}
+nav img {
+    width: 100%;
+    max-width: 1000px; 
+}
+
+/*nav elements start here*/
+nav button {
+    display: flex; width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    padding: .5em;
+    color: white; 
+    background-color: #563420;
+    }
+
+nav ul.hide {
+    display: none;
+}
+    
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #563420;
+    }
+
+nav ul li a {
+    display: flex;
+    border-top: solid 1px white;
+    list-style-type: none;
+    width: 100%;
+    padding: .8rem;
+    text-decoration: none;
+    color: #fafbfb;
+}
+nav ul li.active a {
+    color: black;
+    background-color: #80c2d8;
+}
+nav ul li a:hover {
+    color: #E9c165;
+}	
+
+main section.current {
+    display: flex;
+    justify-content: space-around;
+}
+
+#weatherIcon {
+    width: 4em;
+}
+
+main h2 {
+    color: white;
+    padding: 1em;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    background-color: #563420;
+    margin-top: -.2em;
+   }
+main div.weatherstory {
+    padding: 0 1em 1em 1em;
+}
+
+main div.weatherstory img {
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+
+section.cityBoxes {
+    display: flex;
+    flex-direction: column;
+}
+
+section.cityBoxes div {
+    margin: 10px;
+    border: solid #563420 1px;
+    background-color: #563420;
+}
+
+section.cityBoxes div h3 {
+    color: white;
+    text-align: center;
+}
+
+section.cityBoxes div h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+section.cityBoxes div img {
+    max-width: 100%;
+    
+}
+
+table {
+    margin: 0 auto 5px;
+    min-width: 37.5em;
+}
+
+th, td {
+    padding: .5em;
+    text-align: center;
+    background-color: #E9c165;
+}
+
+article p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  margin: 0 0 .5em 0;
+}
+
+footer {
+    background-color: #80c2d8;
+    text-align: center;
+    padding: 1em;
+}
+footer aside p {
+    margin-bottom: -10px;
+}
+footer>p {
+    margin-top: 30px;
+} 
+/* Other Class and id Selectors */
+.forecast {
+    display: none;
+}
+
+.highlow, .conditions {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 1em 0 1em;
+}
+
+#weathersummary {
+    background-color: #80c2d8;
+    padding: .5em 0em .5em 1em;
+    margin-top: 0;
+}
+
+.subhead {
+    background-color: #80c2d8;
+    padding: .5em 0em .5em 1em;
+    margin-bottom: 0;
+}
+/*** photo gallery css starts here ***/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    
+}
+
+main figure img {
+    width: 100%;
+}
+
+main div figure figcaption {
+    display: none;
+    
+}
+/*** form css starts here ***/
+form {
+    padding: .5em;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: #80c2d8;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 10px 5px;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    color: #563420;
+}
+
+fieldset span {
+    display: block;
+    margin: 20px 0 5px 0;
+    
+}
+
+.submitBtn {
+    padding: 1em;
+    margin: 15px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25em;
+    color: white;
+    background-color: #563420;
+    border-radius: 5px;
+}
+
+#thankyoupage {
+    height: 10em;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topmargin {
+    margin: 10px 0 5px 0;
+}
+#rangeflex {
+    display: flex;
+}
+#ratingvalue {
+    margin-left: 10px;
+}
