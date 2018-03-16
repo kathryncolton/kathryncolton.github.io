@@ -15,7 +15,9 @@
        
     document.getElementById('greenville').innerHTML = '"' + cities[1].motto + '"' + "<br>" + "<br>" + 'Founded ' + cities[1].yearFounded + "<br>" + 'Population ' + cities[1].currentPopulation + "<br>" + 'Avg. Rainfall ' + cities[1].averageRainfall + '"';
        
-    document.getElementById('springfield').innerHTML = '"' + cities[3].motto + '"' + "<br>" + "<br>" + 'Founded ' + cities[3].yearFounded + "<br>" + 'Population ' + cities[3].currentPopulation + "<br>" + 'Avg. Rainfall ' + cities[3].averageRainfall + '"';  }    
+    document.getElementById('springfield').innerHTML = '"' + cities[3].motto + '"' + "<br>" + "<br>" + 'Founded ' + cities[3].yearFounded + "<br>" + 'Population ' + cities[3].currentPopulation + "<br>" + 'Avg. Rainfall ' + cities[3].averageRainfall + '"';
+   
+   }    
        
        /*for (var i = 0; i < cities.length; i++) {
 		if (cities.name == 'Franklin' || cities.name == 'Springfield' || cities.name == 'Greenville') {
