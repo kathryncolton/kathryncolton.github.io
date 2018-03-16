@@ -110,6 +110,13 @@ main h2 {
     background-color: #563420;
     margin-top: -.2em;
    }
+
+main h2#gallery {
+    color: #563420;
+    background-color: white;
+    margin: auto;
+}
+
 main div.weatherstory {
     padding: 0 1em 1em 1em;
 }
@@ -252,6 +259,7 @@ legend {
 fieldset span {
     display: block;
     margin: 20px 0 5px 0;
+    padding: .25em;
     
 }
 
