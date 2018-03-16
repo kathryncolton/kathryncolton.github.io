@@ -109,12 +109,15 @@ main h2 {
     font-family: 'Roboto Slab', serif;
     background-color: #563420;
     margin-top: -.2em;
+    letter-spacing: 1px;
+    line-height: 130%;
    }
 
 main h2#gallery {
     color: #563420;
     background-color: white;
     margin: auto;
+    letter-spacing: normal;
 }
 
 main div.weatherstory {

@@ -14,7 +14,6 @@ main div figure figcaption {
 } 
     
 .grid {
-    display: grid;
     grid-template-columns: auto auto auto;}
     
 main div.weatherstory img {
