@@ -8,13 +8,18 @@
 	<script>
 	$(function(){
         // jQuery Codes goes here
-        toggleStyle = function() {
-            if( $('input[type="text"]').css('background-color') === 'rgb(red)') {
+        var toggleStyle = function() {
+            
+            var inputFields = $('input[type="text"]');
+            
+            if( inputFields.css('background-color') === 'rgb(255, 0, 0)') {
                 $('input[type="text"]').css('background-color', 'rgb(255, 255, 255)');
             } else {
-                $('input[type="text"]').css('background-color', ) 'rgb(255, 0, 0)');
+                inputFields.css('background-color', 'rgb(255, 0, 0)');
             }
         }
+        
+        $('#ReqAQuoteBtn').click(toggleStyle);
         
     })
         
