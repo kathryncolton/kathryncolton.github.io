@@ -263,9 +263,9 @@ body {
 }
 
 .footer h5 {
-	position: absolute;
+	/*position: absolute;
 	top: 8px;
-	left: 7px;
+	left: 7px;*/
 	font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 	color: rgba(0,0,0,0.8);
@@ -275,6 +275,16 @@ body {
 	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.links h5{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 

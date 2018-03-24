@@ -21,6 +21,19 @@
         
         $('#ReqAQuoteBtn').click(toggleStyle);
         
+        $('.coreValues').prepend("<li><strong>This is also great!!</strong></li>");
+        
+        $('<li><strong>This is great!!</strong></li>').prependTo(".coreValues");
+        
+        var nameVal = $('input[name="nameVal"]');
+        
+        function FillEmpty() {
+            if(nameVal.val() == '') {
+                nameVal.val( 'John Doe' );
+            }
+        }
+        
+        $('#ReqAQuoteBtn').click( FillEmpty );
     })
         
 	</script>
@@ -34,12 +47,12 @@
 			<div class="logo" id="alcovelogo"></div>
 			<div class="navbar">
 				<ul class="navigation">
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Catalog</a></li>
-					<li><a href="#">Support</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="animatedMenuBegin.htm">Animated Menu</a></li>
+					<li><a href="DropDownMenuBegin.htm">Drop Down Menu</a></li>
+					<li><a href="fruitBasketBegin.htm">Fruit Basket</a></li>
+					<li><a href="InsertHTMLBegin.htm">Insert HTML</a></li>
+					<li><a href="toggleButtonBegin.htm">Toggle Button</a></li>
+
 				</ul>
 			</div>
 		</div>
@@ -79,7 +92,7 @@
 					<h2>The Values that Drive Us</h2>
 					<hr>
 					<p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with our clients to obtain long lasting customers. <br><br>Our core values : <br><br></p>
-					<ul>
+					<ul class="coreValues">
 						<li>Innovative Ideas</li>
 						<li>Ownership</li>
 						<li>Frugality</li>
@@ -118,6 +131,13 @@
 
 		<div class="footer">
 			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+            <section class="links">
+            <h5><a href="animatedMenuBegin.htm">Animated Menu</a></h5>
+            <h5><a href="DropDownMenuBegin.htm">Drop Down Menu</a></h5>
+            <h5><a href="fruitBasketBegin.htm">Fruit Basket</a></h5>
+            <h5><a href="InsertHTMLBegin.htm">Insert HTML</a></h5>
+            <h5><a href="toggleButtonBegin.htm">Toggle Button</a></h5>
+			</section>		
 		</div>
 	</div>
 </body>
