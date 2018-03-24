@@ -8,7 +8,14 @@
 	<script>
 	$(function(){
         // jQuery Codes goes here
-        $('alcoveLogo').css('opacity', 0.4);
+        toggleStyle = function() {
+            if( $('input[type="text"]').css('background-color') === 'rgb(red)') {
+                $('input[type="text"]').css('background-color', 'rgb(255, 255, 255)');
+            } else {
+                $('input[type="text"]').css('background-color', ) 'rgb(255, 0, 0)');
+            }
+        }
+        
     })
         
 	</script>
