@@ -1,0 +1,117 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  max-width: 1200px;
+    margin: auto;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+p, h1, h2, h3 {
+    padding: 0 10px 0 10px;
+}
+
+p {
+    font-family: 'Open-Sans', sans-serif;
+    color: dimgrey;
+}
+
+p a {
+    color: #90183c;
+}
+
+h1, h2 {
+    font-family: 'Amaranth', sans-serif;
+    color: #90183c;
+}
+
+h2 a {
+    color: #82a7c1;
+    text-decoration: none;
+    
+}
+
+header img {
+  position: absolute;
+  top: 10px;
+  left: 175px; 
+}
+
+header button {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: white;
+    border: none;
+    color: #3D101F;
+    margin: 15px;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    margin-left: -40px;
+    margin-bottom: -15px;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: .75px solid #82a7c1;
+    margin-top: -.75px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #3D101F;
+}
+
+main .main-img {
+    border-bottom: 50px solid #3D101F;
+}
+
+main .hide {
+    display: none;
+}
+
+div.red {
+    background-color: #90183c;
+    padding: 10px 0 10px 0;
+}
+
+div.red h2 {
+    color: #82a7c1;
+    letter-spacing: 1px;
+}
+
+div.red h2 a:hover {
+    color: white;
+}
+
+div.red p {
+    color: white;
+}
+
+figcaption {
+    font-family: 'Open-Sans', sans-serif;
+    background-color: white;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+footer {
+    text-align: center;
+}
