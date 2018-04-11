@@ -11,70 +11,82 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- Google API font reference -->
   <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="css/medium.css" rel="stylesheet">   <!--medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">    <!--large/wide/desktop views --> 
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+   
 </head>
 <body>
     
 <header>
-     <img src="images/logo.png" id="logo" alt="mountain spoke logo">
-    <button class="hamburger">&#9776;</button>
-    <button class="cross">&#735;</button>
+     
+    <div><img src="images/logo.png" id="logo" alt="mountain spoke logo"></div>
+   
 </header>    
 
 <nav class="menu">
     <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Sales</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="menu">Menu
+        <ul class="submenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
     </ul>
     
     </nav>    
+<img class="main-img" src="images/adventure-bikers-bikes-org.jpg" alt="bikers on hill trail" sizes="100vw" srcset="images/adventure-bikers-bikes-600.jpg 600w, images/adventure-bikers-bikes-800.jpg 800w, images/adventure-bikers-bikes-1200px.jpg 1200w">
 
-<main>
-    <img class="main-img" src="images/adventure-bikers-bikes-org.jpg" alt="bikers on hill trail" sizes="100vw" srcset="images/adventure-bikers-bikes-600.jpg 600w, images/adventure-bikers-bikes-800.jpg 800w, images/adventure-bikers-bikes-1200px.jpg 1200w">
-    <img class="hide" src="images/action-bicycle-bike_boy.jpg" alt="">
-    <img class="hide" src="images/active-adventure-bike-man.jpg" alt="">
-    <h1>Let's go for a ride!</h1>
+<main class="flex">
     <section class="welcome">
-    <p>Whether you are an experienced rider, or are looking for knowledgable teachers to show you the ropes, we have something for everyone. Since 1996, we've helped over 10,000 people from around the world get more out of life through heart-pounding, fist-pumping, soul-fulfilling <a href="adventure-tours.html">mountain bike adventures</a> in some of the most spectacular scenery in Montana.</p>
-    <p>We are passionate about mountain biking, and our goal is to provide the best bikes, parts, repair service, and biking tours in the West.</p></section>
+        <div class="vert-pics">
+    <img class="hide" src="images/active-adventure-bike-163491.jpg" alt="">
+        <img class="hide" src="images/action-bicycle-bike-735691.jpg" alt=""></div>
     
-<div class="red">    
+  <div><h1>Let's go for a ride!</h1>
+    <p>Whether you are an experienced rider, or are looking for knowledgable teachers to show you the ropes, we have something for everyone. Since 1996, we've helped over 10,000 people from around the world get more out of life through heart-pounding, fist-pumping, soul-fulfilling <a href="tours.html">mountain bike adventures</a> in some of the most spectacular scenery in Montana.</p>
+    <p>We are passionate about mountain biking, and our goal is to provide the best bikes, parts, repair service, and biking tours in the West.</p>
+    <p>Whether you are an experienced rider, or are looking for knowledgable teachers to show you the ropes, we have something for everyone. Since 1996, we've helped over 10,000 people from around the world get more out of life through heart-pounding, fist-pumping, soul-fulfilling mountain bike adventures in some of the most spectacular scenery in Montana.</p>
+    <p>We are passionate about mountain biking, and our goal is to provide the best bikes, parts, repair service, and biking tours in the West.</p></div></section>
+    
+<div class="aside">    
     <section>
         <h2>Does your bike need a tune-up?</h2>
-        <p>Whether it’s a small brake adjustment or a complete bike overhaul, we’re happy to help. Our highly experienced staff is here to answer any questions you may have and will help get you and your bike back on the trail as quickly as possible.</p>
+        <p>Does your bike <a href="service.html">need servicing?</a> Whether it’s a small brake adjustment or a complete bike overhaul, we’re happy to help. Our highly experienced staff is here to answer any questions you may have and will help get you and your bike back on the trail as quickly as possible.</p>
     </section>
     
     <section class="bikes-for-sale">
-        <h2><a href="#">Mountain Bikes For Sale</a></h2>
+        <h2><a href="sales.html">Our Best Deals</a></h2>
         <div class="grid">
-            <figure><img src="images/BMC-fourstroke-FS02XT.jpg" alt="stormy sky photo">
-                <figcaption>Bike Description</figcaption></figure>
-            <figure><img src="images/BMC-Speedfox_trailcrew.jpg">
-                <figcaption>Bike Description</figcaption></figure>
-            <figure><img src="images/Felt-Decree_FRD.jpg" alt="stormy sky photo">
-                <figcaption>Bike Description</figcaption></figure>
-            <figure><img src="images/Jamis-Dragonslayer.jpg" alt="stormy sky photo">
-                <figcaption>Bike Description</figcaption></figure>
+            <figure><img src="images/BMC-fourstroke-FS02XT-small.jpg" alt="bmc bike">
+                <figcaption>BMC Fourstroke FS02 XT 2015</figcaption></figure>
+            <figure><img src="images/BMC-Speedfox_trailcrew-small.jpg" alt="bmc bike">
+                <figcaption>2017 Bmc Speedfox 03 Trailcrew Slx</figcaption></figure>
+            <figure><img src="images/Felt-Decree_FRD-small.jpg" alt="Felt bike">
+                <figcaption>Felt Decree FRD 2017</figcaption></figure>
+            <figure><img src="images/Jamis-Dragonslayer-small.jpg" alt="Jamis bike">
+                <figcaption>Jamis DragonSlayer 27.5+ Pro 2017</figcaption></figure>
         </div>
     </section>
     </div>
 </main>    
 
 <footer>
-    <p>3950 Valley Commons Drive Bozeman, MT</p>
+     <p><a href="contact.html">3950 Valley Commons Drive Bozeman, MT</a></p>
     <p>555-123-4567</p>
-    <p>&copy;2018 All Rights Reserved</p>
-    <p>Kathryn Colton CIT 230</p>
-    <p>Resource Links</p>
+    <p class="copyright">&copy;2018 All Rights Reserved</p>
+    <p class="copyright">Kathryn Colton CIT 230</p>
+    <p class="copyright"><a href="#">Resource Links</a></p>
+    <p class="copyright"><a href="https://youtu.be/bsZL-Rs4mFc">Presentation Video</a></p>
     
 
 </footer>    
-    
- <script src="js/hamburger.js"></script>   
+
+ <script src="js/accordion.js"></script>        
+   
 </body>
 </html>

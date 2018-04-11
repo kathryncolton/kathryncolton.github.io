@@ -12,7 +12,7 @@ img {
     max-width: 100%;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, table {
     padding: 0 10px 0 10px;
 }
 
@@ -27,7 +27,7 @@ p a {
 
 h1, h2 {
     font-family: 'Amaranth', sans-serif;
-    color: #90183c;
+    color: #3D101F;
 }
 
 h2 a {
@@ -36,41 +36,34 @@ h2 a {
     
 }
 
-header img {
-  position: absolute;
-  top: 10px;
-  left: 175px; 
+header div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-header button {
-    position:absolute;
-    top:0;
-    left:0;
-    background-color: white;
-    border: none;
-    color: #3D101F;
-    margin: 15px;
-    font-size: 1.5em;
-}
 
 nav {
+    display: block;
+}
+
+nav ul {
     display: flex;
     flex-direction: column;
-    padding-top: 125px;
-    margin-left: -40px;
-    margin-bottom: -15px;
+    color: #3D101F;
+    font-size: 1.25em;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 nav ul li{
     list-style-type: none;
     font-family: 'Amaranth', sans-serif;
     font-weight: 700;
-    font-size: 1.5em;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    border: .75px solid #82a7c1;
-    margin-top: -.75px;
+    padding: 10px;
+    border-bottom: .75px solid #82a7c1;
+   margin-bottom: -1px;
 }
 
 nav ul li a {
@@ -79,39 +72,257 @@ nav ul li a {
     color: #3D101F;
 }
 
-main .main-img {
-    border-bottom: 50px solid #3D101F;
+nav ul li a:hover {
+    color: #82a7c1;
+}
+
+
+.main-img {
+    border-bottom: 10px solid #3D101F;
+    border-top: 10px solid #3D101F;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
 main .hide {
     display: none;
 }
 
-div.red {
-    background-color: #90183c;
+div.aside {
+    background-color: #8d987a;
     padding: 10px 0 10px 0;
 }
 
-div.red h2 {
-    color: #82a7c1;
+div.aside h2 {
     letter-spacing: 1px;
 }
 
-div.red h2 a:hover {
+div.aside h2 a:hover {
     color: white;
 }
 
-div.red p {
+div.aside p {
     color: white;
+}
+
+h2 a {
+    color: #3D101F;
 }
 
 figcaption {
     font-family: 'Open-Sans', sans-serif;
+    font-size: .8em;
     background-color: white;
     padding: 10px;
     margin-top: -5px;
 }
+/*Tours page styling starts here*/
 
-footer {
+td a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+td a:hover {
+    color: #8f8030;
+    text-decoration: underline;
+}
+
+table.tour-desc td:first-child {
+   text-align: center; 
+}
+
+i {
+    font-size: 1.5em;
+    color: white;
+    padding-right: 5px;
+}
+
+table.tour-desc td:first-child {
+    background-color: #8f8030;
+    padding: 5px;
+}
+table.tour-desc td:last-child {
+    font-family: 'Open-Sans', sans-serif;
+    color: dimgrey;
+    font-size: 1.2em;
+}
+
+.tour, .header {
+    border-bottom: 1px solid #8f8030;
+}
+
+.tour .inline-block img {
+        padding: 15px;
+    }
+.tour .inline-block {
+    background-color: #8d987a;
+}
+/*sales page styling starts here*/
+section.bikesale {
+    border-bottom: 2px solid grey;
+    
+}
+div.sale-desc {
+    margin-right: 15px;
+}
+.paralarge {
+    font-size: 1.5em;
+    color: #8f8030;
+}
+.strike {
+    text-decoration: line-through;
+}
+
+div.price img, .contact img {
+    max-width: 30px;
+    padding: 0 5px 5px 5px;
+}
+
+main.salespage section {
+    border-bottom: 1px solid #8f8030;
+}
+
+#feltdecree {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#jamis {
+    margin-left: 20px;
+}
+/* events syling starts here */
+main.event {
+    background-image: url("Bike-Trail-Mountain-2.jpg");
+    background-color: #8d987a;
+    min-height: 800px;
     text-align: center;
+}
+
+main.event h1 {
+    margin-top: 0;
+    padding-top: 25px;
+}
+h1.eventheader {
+    font-size: 2.75em;
+}
+main.event p {
+    padding: 0 40px;
+    color: #3D101F;
+}
+
+table.eventInfo {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 10px 10px 20px #8d987a;
+    margin: auto;
+    min-width: 55%
+}
+
+table.eventInfo td {
+    font-family: 'Open-Sans', sans-serif; 
+    border-bottom: 1px solid #8d987a;
+}
+
+table.eventInfo td:first-child {
+    text-align: right;
+}
+table.eventInfo td:last-child {
+    text-align: left;
+}
+.tablehead {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.5em;
+    color: #3D101F;
+    padding-bottom: 10px;
+}
+
+fieldset.eventform {
+    margin: 20px auto;
+    border: 2px solid white;
+    max-width: 55%;
+}
+.eventlegend {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 2em;
+    color: #3D101F;
+}
+
+fieldset.eventform input, textarea {
+    margin-top: 10px;
+    font-family: 'Open-Sans', sans-serif;
+    min-width: 100%;
+}
+
+button.event {
+    background-color: #3D101F;
+    padding: 10px;
+    color: white;
+    margin: 0 20px 20px 20px;
+}
+/* contact page syling starts here */
+
+iframe {
+    min-width: 100%;
+    min-height: 400px;
+    border: 1px solid #3D101F;
+}
+
+.contactinfo img {
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+/* services syling starts here */
+
+.service-packages {
+    margin: auto;
+    border-collapse: collapse;
+    min-width: 100%;
+}
+
+.gold {
+    padding: 5px 12px 5px 12px;
+    font-family: 'Open-Sans', sans-serif;
+    background-color: gold;
+}
+.silver {
+    padding: 5px 12px 5px 12px;
+    font-family: 'Open-Sans', sans-serif;
+    background-color: silver;
+}
+.bronze {
+    padding: 5px 12px 5px 12px;
+    font-family: 'Open-Sans', sans-serif;
+    background-color: darkgoldenrod;
+}
+
+td.head {
+    padding-left: 0;
+}
+#silver, #gold, #bronze {
+    padding-bottom: 15px;
+}
+
+ /* footer syling starts here */
+footer {
+    
+    text-align: center;
+    background-color: #3D101F;
+    padding: 10px 0 10px 0;
+}
+footer p {
+        color: white;
+        font-size: .85em;
+    }
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    color: #8f8030;
 }

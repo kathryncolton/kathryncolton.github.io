@@ -1,0 +1,95 @@
+@media only screen and (min-width: 600px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+ 
+  
+   nav ul {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+    nav ul li {
+        border: none;
+        font-size: 1em;
+    }  
+    
+main .hide {
+    display: initial;
+    max-width: 100%;
+}  
+    .vert-pics {
+        display: flex;
+        flex-direction: column;
+        min-width: 40%;
+    } 
+    
+    .vert-pics img {
+        margin: 10px;
+    }
+    
+    .welcome {
+      display: flex;
+    }
+    
+    section.bikeSale {
+        display: flex;
+    }
+    
+    .tour {
+        display: flex;
+    }
+    
+    .tour .inline-block {
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    div.map {
+    border: 1px solid #3D101F;
+    margin: 10px;
+    min-width: 64%;
+}
+    main.contact {
+        display: flex;
+    }
+    .contactinfo {
+        min-width: 35%;
+    }
+    
+    input {
+        max-width: 50%;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    figure {
+        margin: 10px;
+    }
+  
+     section.tables {
+        display: flex;
+    }
+    
+    .service-packages {
+        margin: auto;
+        min-width: 33.3%;
+        min-height: 250px;
+    }
+    
+    footer p {
+        font-size: .85em;
+    }
+    
+    footer p.copyright {
+        display: inline;
+        padding-bottom: 10px;
+    }
+    
+}

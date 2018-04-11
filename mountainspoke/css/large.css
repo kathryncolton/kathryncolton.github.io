@@ -1,0 +1,26 @@
+@media only screen and (min-width: 800px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  article p.town-article img { width: 40%; }
+  
+
+    
+.grid {
+    grid-template-columns: auto auto;
+}
+    
+    
+    
+    main.flex {
+        display: flex;
+    } 
+    
+    div.aside {
+        max-width: 40%;
+    }    
+
+    .tour .inline-block {
+        min-width: 35%;  
+    }
+    
+    
+}
